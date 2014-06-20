@@ -3,11 +3,11 @@ slimserver-vendor
 
 Fork of the slimserver-vendor repo patched to work with openbsd.
 
-= Installing LMS =
+## Installing LMS
 
 The following installation instructions are largely based on Roland0's work in `http://forums.slimdevices.com/archive/index.php/t-99648.html`. Thanks Roland0!
 
-== Perl ==
+### Perl
 
 Download the perl sources from `http://www.cpan.org/src/README.html`. Untar and run the configuration:
 
@@ -28,7 +28,7 @@ sudo make install-strip
 
 As far as I can see there is no real reason LMS can't work with the base perl version, but this does keep all the many many add-ons nicely separate from the nice and clean OpenBSD install.
 
-== LMS ==
+### LMS
 
 Download `http://downloads.slimdevices.com/LogitechMediaServer_v7.8.0/logitechmediaserver-7.8.0-noCPAN.tgz` and extract in `/opt`:
 
@@ -43,7 +43,7 @@ Fix the permissions:
 sudo chown -R root:root /opt/logitechmediaserver-7.7.2-33893-noCPAN/
 ```
 
-== Perl modules ==
+### Perl modules
 Clone this repo and run buildme.sh:
 
 ```
@@ -59,7 +59,7 @@ cd build/arch/5.14/
 sudo cp -R <architecture e.g. x86_64-linux-thread-multi>/ /opt/logitechmediaserver-7.8.0-noCPAN/CPAN/arch/5.14
 ```
 
-== Running the server ==
+### Running the server
 
 Create a group for the squeezecenter daemon if you haven't already (make sure you pick a unique groupid, I picked 1001 for my system):
 
