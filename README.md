@@ -47,7 +47,7 @@ sudo chown -R root:root /opt/logitechmediaserver-7.7.2-33893-noCPAN/
 Clone this repo and run buildme.sh:
 
 ```
-git clone https://github.com/wardwouts/slimserver-vendor.git slimserver-vendor-openbsd.git
+git clone https://github.com/wardwouts/slimserver-vendor-openbsd.git slimserver-vendor-openbsd.git
 cd slimserver-vendor-openbsd.git/CPAN
 ./buildme.sh
 ```
