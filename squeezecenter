@@ -1,0 +1,11 @@
+#!/bin/sh
+
+daemon="/opt/perl-5.14.4-LMS/bin/perl5.14.4 /opt/logitechmediaserver-7.8.0-noCPAN/slimserver.pl"
+daemon_flags="--daemon --logdir=/var/log/squeezecenter --cachedir=/var/cache/squeezecenter --prefsdir=/var/db/squeezecenter"
+daemon_user="_squeezecenter"
+
+. /etc/rc.d/rc.subr
+
+rc_reload=NO
+
+rc_cmd $1
