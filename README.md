@@ -52,7 +52,7 @@ cd slimserver-vendor-openbsd.git/CPAN
 ./buildme.sh
 ```
 
-If the build was succesful copy the modules (fill in the right architecture name):
+If the build was succesful copy the modules (fill in the right architecture name `OpenBSD.powerpc-openbsd-thread-multi` in my case):
 ```
 sudo mkdir -p /opt/logitechmediaserver-7.8.0-noCPAN/CPAN/arch/5.14/
 cd build/arch/5.14/
@@ -101,4 +101,8 @@ sudo chown _squeezecenter:_squeezecenter /var/log/squeezecenter
 sudo chown _squeezecenter:_squeezecenter /var/cache/squeezecenter
 ```
 
-
+Finally start the server:
+```
+cd /etc/rc.d
+sudo ./squeezecenter start
+```
